@@ -86,7 +86,10 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
                 </a>
               );
             })}
-            <a href="#consultation" className="btn-gold ml-4 text-[9px] py-2.5 px-5">
+            <a href="#reviews" className="btn-rock ml-4 text-[9px] py-2.5 px-5">
+              Отзывы
+            </a>
+            <a href="#consultation" className="btn-gold text-[9px] py-2.5 px-5">
               Записаться
             </a>
           </div>
