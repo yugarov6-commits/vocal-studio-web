@@ -327,6 +327,72 @@ function CoursesSection() {
   );
 }
 
+interface ArticleWithText {
+  tag: string; title: string; excerpt: string; readTime: string; emoji: string; fullText?: string;
+}
+
+function ArticlesSection() {
+  const [openArticle, setOpenArticle] = useState<ArticleWithText | null>(null);
+  return (
+    <>
+      <section id="smart" className="py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="section-eyebrow mb-4">Читать полезно</p>
+            <h2 className="section-title">Много умных слов <em>о главном</em></h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {(ARTICLES as ArticleWithText[]).map((article, i) => (
+              <div
+                key={i}
+                onClick={() => article.fullText ? setOpenArticle(article) : undefined}
+                className="card-rock p-7 group hover:border-rock-gold/30 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
+              >
+                <div className="flex items-center justify-between mb-5">
+                  <span className="font-oswald text-[10px] tracking-[0.25em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">{article.tag}</span>
+                  <span className="font-oswald text-[10px] tracking-widest uppercase text-rock-ash">{article.readTime}</span>
+                </div>
+                <div className="text-3xl mb-4">{article.emoji}</div>
+                <h3 className="font-cormorant text-xl font-semibold text-rock-light mb-3 group-hover:text-rock-gold transition-colors leading-snug">{article.title}</h3>
+                <p className="font-cormorant text-rock-light text-lg leading-relaxed flex-1" style={{ opacity: 0.75 }}>{article.excerpt}</p>
+                <div className="flex items-center gap-2 mt-6 pt-5 border-t border-white/5 text-rock-gold group-hover:gap-3 transition-all duration-300">
+                  <span className="font-oswald text-[10px] tracking-widest uppercase">{article.fullText ? "Читать" : "Скоро"}</span>
+                  <Icon name="ArrowRight" size={14} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {openArticle && (
+        <div
+          className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto py-10 px-4"
+          style={{ background: "rgba(0,0,0,0.92)", backdropFilter: "blur(12px)" }}
+          onClick={() => setOpenArticle(null)}
+        >
+          <div
+            className="card-rock rounded-lg max-w-2xl w-full p-8 md:p-12 relative"
+            style={{ background: "#111111" }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button onClick={() => setOpenArticle(null)} className="absolute top-5 right-5" style={{ color: "rgba(201,168,76,0.6)", background: "none", border: "none", cursor: "pointer" }}>
+              <Icon name="X" size={22} />
+            </button>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="font-oswald text-[10px] tracking-[0.25em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">{openArticle.tag}</span>
+              <span className="font-oswald text-[10px] tracking-widest uppercase text-rock-ash">{openArticle.readTime}</span>
+            </div>
+            <div className="text-4xl mb-4">{openArticle.emoji}</div>
+            <h2 className="font-cormorant text-3xl font-semibold mb-8 leading-snug" style={{ color: "var(--gold)" }}>{openArticle.title}</h2>
+            <div className="font-cormorant text-lg leading-relaxed whitespace-pre-wrap" style={{ color: "var(--silver)", opacity: 0.9 }}>{openArticle.fullText}</div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 export default function ContentSections({ formData, setFormData, formSent, handleSubmit }: ContentSectionsProps) {
   return (
     <>
@@ -340,42 +406,7 @@ export default function ContentSections({ formData, setFormData, formSent, handl
 
       <WaveDivider />
 
-      {/* SMART ARTICLES */}
-      <section id="smart" className="py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="section-eyebrow mb-4">Читать полезно</p>
-            <h2 className="section-title">Много умных слов <em>о главном</em></h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {ARTICLES.map((article, i) => (
-              <div
-                key={i}
-                className="card-rock p-7 group hover:border-rock-gold/30 transition-all duration-300 hover:-translate-y-1 cursor-pointer flex flex-col"
-              >
-                <div className="flex items-center justify-between mb-5">
-                  <span className="font-oswald text-[10px] tracking-[0.25em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">
-                    {article.tag}
-                  </span>
-                  <span className="font-oswald text-[10px] tracking-widest uppercase text-rock-ash">{article.readTime}</span>
-                </div>
-                <div className="text-3xl mb-4">{article.emoji}</div>
-                <h3 className="font-cormorant text-xl font-semibold text-rock-light mb-3 group-hover:text-rock-gold transition-colors leading-snug">
-                  {article.title}
-                </h3>
-                <p className="font-cormorant text-rock-light text-lg leading-relaxed flex-1" style={{ opacity: 0.75 }}>
-                  {article.excerpt}
-                </p>
-                <div className="flex items-center gap-2 mt-6 pt-5 border-t border-white/5 text-rock-gold group-hover:gap-3 transition-all duration-300">
-                  <span className="font-oswald text-[10px] tracking-widest uppercase">Читать</span>
-                  <Icon name="ArrowRight" size={14} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ArticlesSection />
 
       <WaveDivider />
 
