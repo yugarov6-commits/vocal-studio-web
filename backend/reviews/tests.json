@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "GET reviews",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "POST review",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Тест", "text": "Отличный курс!", "rating": 5},
+      "expectedStatus": 201
+    }
+  ]
+}

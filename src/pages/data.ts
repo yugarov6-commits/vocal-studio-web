@@ -8,6 +8,7 @@ export const NAV_ITEMS = [
   { label: "Диагностика слуха", href: "#hearing" },
   { label: "Лечим музыкой", href: "#therapy" },
   { label: "В кадре", href: "#gallery" },
+  { label: "Отзывы", href: "#reviews" },
 ];
 
 export const BOOK = {
