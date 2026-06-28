@@ -46,7 +46,7 @@ export default function CharismaCoursePage() {
           <img
             src={COVER}
             alt="Харизма 2.0"
-            className="w-full h-[60vh] md:h-screen object-cover object-top"
+            className="w-full h-[60vh] md:h-screen object-contain object-center bg-black"
           />
           <div className="absolute inset-0"
             style={{ background: "linear-gradient(to right, transparent 60%, #0a0a0a 100%), linear-gradient(to top, #0a0a0a 0%, transparent 30%)" }} />
