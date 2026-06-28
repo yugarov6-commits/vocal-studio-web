@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import HeroAboutSections from "./HeroAboutSections";
 import ContentSections from "./ContentSections";
-import ReviewsSection from "./ReviewsSection";
+
 import AnimatedWaveCanvas from "@/components/AnimatedWaveCanvas";
 
 function WaveDivider() {
@@ -41,7 +41,6 @@ export default function Index() {
         formSent={formSent}
         handleSubmit={handleSubmit}
       />
-      <ReviewsSection />
     </div>
   );
 }

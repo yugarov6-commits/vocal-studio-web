@@ -4,6 +4,7 @@ import Icon from "@/components/ui/icon";
 import { DIRECTIONS, COURSES, GALLERY, ARTICLES } from "./data";
 import HearingTestSection from "@/components/HearingTestSection";
 import AnimatedWaveCanvas from "@/components/AnimatedWaveCanvas";
+import ReviewsSection from "./ReviewsSection";
 
 function WaveDivider() {
   return (
@@ -424,6 +425,11 @@ export default function ContentSections({ formData, setFormData, formSent, handl
           </div>
         </div>
       </section>
+
+      <WaveDivider />
+
+      {/* REVIEWS */}
+      <ReviewsSection />
 
       <WaveDivider />
 
