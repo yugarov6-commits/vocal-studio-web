@@ -63,7 +63,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
           </a>
 
           {/* Навигация */}
-          <div className="hidden lg:flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-4">
             {NAV_ITEMS.map((item) => {
               const id = item.href.replace("#", "");
               const isActive = activeSection === id;
@@ -71,7 +71,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
                 <a
                   key={item.href}
                   href={item.href}
-                  className="relative font-oswald text-[10px] tracking-[0.2em] uppercase transition-all duration-300"
+                  className="relative font-oswald text-[10px] tracking-[0.2em] uppercase transition-all duration-300 whitespace-nowrap"
                   style={{
                     color: isActive ? "#c9a84c" : "rgba(208,208,220,0.5)",
                   }}
