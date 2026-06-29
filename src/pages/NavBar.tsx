@@ -63,7 +63,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
           </a>
 
           {/* Навигация */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3 overflow-hidden">
             {NAV_ITEMS.map((item) => {
               const id = item.href.replace("#", "");
               const isActive = activeSection === id;
