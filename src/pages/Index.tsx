@@ -41,6 +41,16 @@ export default function Index() {
         formSent={formSent}
         handleSubmit={handleSubmit}
       />
+      <footer style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
+            © 2025 Анна Артман. Все права защищены.
+          </p>
+          <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
+            Самозанятый · ИНН 121523125266
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
