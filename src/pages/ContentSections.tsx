@@ -385,7 +385,13 @@ function ArticlesSection() {
             </div>
             <div className="text-4xl mb-4">{openArticle.emoji}</div>
             <h2 className="font-cormorant text-3xl font-semibold mb-8 leading-snug" style={{ color: "var(--gold)" }}>{openArticle.title}</h2>
-            <div className="font-cormorant text-lg leading-relaxed whitespace-pre-wrap" style={{ color: "var(--silver)", opacity: 0.9 }}>{openArticle.fullText}</div>
+            <div className="font-cormorant text-lg leading-relaxed whitespace-pre-wrap" style={{ color: "var(--silver)", opacity: 0.9 }}>
+              {openArticle.fullText?.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+                const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+                if (match) return <a key={i} href={match[2]} onClick={() => setOpenArticle(null)} style={{ color: "var(--gold)", textDecoration: "underline", cursor: "pointer" }}>{match[1]}</a>;
+                return part;
+              })}
+            </div>
           </div>
         </div>
       )}
