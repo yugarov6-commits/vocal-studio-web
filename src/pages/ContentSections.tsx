@@ -276,7 +276,7 @@ function CoursesSection() {
           <h2 className="section-title">Прокачка <em>голоса</em> (мастер-классы и лекции)</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
           {COURSES.map((course, i) => {
             const hasTaglines = "taglines" in course && Array.isArray((course as { taglines?: string[] }).taglines);
             return (
@@ -319,6 +319,50 @@ function CoursesSection() {
               </div>
             );
           })}
+        </div>
+
+        {/* Баннер: купить комплект */}
+        <div className="relative overflow-hidden rounded-none border border-rock-gold/30 p-8 md:p-10"
+          style={{ background: "linear-gradient(135deg, rgba(201,168,76,0.06) 0%, rgba(122,21,37,0.08) 50%, rgba(201,168,76,0.04) 100%)" }}>
+          {/* угловые акценты */}
+          <div className="absolute top-0 left-0 w-12 h-12 pointer-events-none">
+            <div className="absolute top-0 left-0 w-full h-px bg-rock-gold/60" />
+            <div className="absolute top-0 left-0 w-px h-full bg-rock-gold/60" />
+          </div>
+          <div className="absolute bottom-0 right-0 w-12 h-12 pointer-events-none">
+            <div className="absolute bottom-0 right-0 w-full h-px bg-rock-gold/60" />
+            <div className="absolute bottom-0 right-0 w-px h-full bg-rock-gold/60" />
+          </div>
+
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+            {/* Текст */}
+            <div className="flex-1">
+              <p className="font-oswald text-[10px] tracking-[0.3em] uppercase text-rock-gold mb-3">Выгодное предложение</p>
+              <h3 className="font-cormorant text-3xl md:text-4xl font-semibold text-rock-light mb-3 leading-tight">
+                Комплект всех курсов
+              </h3>
+              <p className="font-cormorant text-lg text-rock-light mb-5" style={{ opacity: 0.75 }}>
+                Медведь на ухо · Фонический резонанс · База вокала · Харизма 2.0 · Книга «Сила твоего голоса»
+              </p>
+              <div className="flex items-baseline gap-4">
+                <span className="font-cormorant text-4xl font-semibold text-gradient-gold">3 000 ₽</span>
+                <span className="font-oswald text-sm tracking-widest uppercase text-rock-ash line-through">4 600 ₽</span>
+                <span className="font-oswald text-[10px] tracking-[0.2em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">
+                  −35%
+                </span>
+              </div>
+            </div>
+
+            {/* Кнопка */}
+            <div className="shrink-0">
+              <a href="#consultation" className="btn-gold text-sm py-4 px-10 block text-center whitespace-nowrap">
+                Купить комплект
+              </a>
+              <p className="font-oswald text-[9px] tracking-widest uppercase text-rock-ash text-center mt-3">
+                Доступ сразу после оплаты
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
