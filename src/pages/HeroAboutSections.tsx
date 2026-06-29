@@ -225,9 +225,10 @@ export default function HeroAboutSections() {
                 fontFamily: "Cormorant, serif",
                 fontWeight: 300,
                 fontStyle: "italic",
-                lineHeight: 0.9,
+                lineHeight: 1.1,
                 color: "#f0ece4",
                 letterSpacing: "-0.02em",
+                paddingTop: "0.1em",
               }}>
                 Анна
               </h1>

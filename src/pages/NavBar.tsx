@@ -47,14 +47,14 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
             style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5) 50%, transparent)" }} />
         )}
 
-        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+        <div className="w-full px-4 py-2 flex items-center justify-between gap-2">
 
           {/* Лого */}
-          <a href="#" className="flex items-center select-none group">
+          <a href="#" className="flex items-center select-none group shrink-0">
             <img
               src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/b94da0ff-312b-4232-bc44-3b8de7c3505c.png"
               alt="Artman"
-              className="h-16 w-auto object-contain transition-all duration-500 group-hover:scale-105"
+              className="h-14 w-auto object-contain transition-all duration-500 group-hover:scale-105"
               style={{
                 filter: "invert(1) sepia(1) saturate(6) hue-rotate(5deg) brightness(2) contrast(1.5) drop-shadow(0 0 24px rgba(201,168,76,1))",
                 mixBlendMode: "screen",
@@ -63,7 +63,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
           </a>
 
           {/* Навигация */}
-          <div className="hidden lg:flex items-center gap-3 overflow-hidden">
+          <div className="hidden lg:flex items-center gap-3 flex-1 justify-center">
             {NAV_ITEMS.map((item) => {
               const id = item.href.replace("#", "");
               const isActive = activeSection === id;
@@ -86,10 +86,14 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
                 </a>
               );
             })}
-            <a href="#reviews" className="btn-rock ml-4 text-[9px] py-2.5 px-5">
+          </div>
+
+          {/* Кнопки справа */}
+          <div className="hidden lg:flex items-center gap-2 shrink-0">
+            <a href="#reviews" className="btn-rock text-[9px] py-2 px-4">
               Отзывы
             </a>
-            <a href="#consultation" className="btn-gold text-[9px] py-2.5 px-5">
+            <a href="#consultation" className="btn-gold text-[9px] py-2 px-4">
               Записаться
             </a>
           </div>
