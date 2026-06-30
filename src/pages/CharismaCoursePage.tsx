@@ -17,11 +17,6 @@ const MODULES = [
   { icon: "📋", text: "Практические протоколы для повседневного общения и публичных выступлений" },
 ];
 
-function openTelegram() {
-  const text = encodeURIComponent("Здравствуйте! Хочу купить курс «Харизма 2.0». Подскажите, как оплатить?");
-  window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
-}
-
 export default function CharismaCoursePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -103,12 +98,12 @@ export default function CharismaCoursePage() {
           </div>
 
           <div className="relative z-10">
-            <button onClick={openTelegram} className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4">
-              <Icon name="Send" size={20} />
-              Купить в Telegram
+            <button className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4">
+              <Icon name="ShoppingCart" size={20} />
+              Купить
             </button>
-            <p className="mt-4 text-rock-ash font-cormorant text-base" style={{ opacity: 0.6 }}>
-              Напишите нам — получите инструкцию по оплате
+            <p className="mt-3 font-cormorant text-rock-ash" style={{ fontSize: "11px", opacity: 0.55, maxWidth: "380px", lineHeight: "1.6" }}>
+              Нажимая кнопку «Оплатить», я принимаю условия публичной оферты и подтверждаю, что ознакомлен(а) с Политикой обработки персональных данных.
             </p>
           </div>
         </div>
@@ -174,12 +169,12 @@ export default function CharismaCoursePage() {
             <span className="text-rock-ash font-cormorant text-lg">— доступ навсегда</span>
           </div>
           <div>
-            <button onClick={openTelegram} className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4 mx-auto">
-              <Icon name="Send" size={20} />
-              Купить в Telegram
+            <button className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4 mx-auto">
+              <Icon name="ShoppingCart" size={20} />
+              Купить
             </button>
-            <p className="mt-4 text-rock-ash font-cormorant text-base" style={{ opacity: 0.6 }}>
-              @ARTMANANDCO — ответим быстро
+            <p className="mt-3 font-cormorant text-rock-ash" style={{ fontSize: "11px", opacity: 0.55, lineHeight: "1.6" }}>
+              Нажимая кнопку «Оплатить», я принимаю условия публичной оферты и подтверждаю, что ознакомлен(а) с Политикой обработки персональных данных.
             </p>
           </div>
         </div>

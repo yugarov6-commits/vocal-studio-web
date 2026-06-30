@@ -69,11 +69,6 @@ const CONTENTS = [
   { icon: "♾️", label: "Доступ навсегда", desc: "Возвращайтесь к материалам в любое время" },
 ];
 
-function openTelegram() {
-  const text = encodeURIComponent("Здравствуйте! Хочу купить курс «Фонический резонанс. Восстановление голоса». Подскажите, как оплатить?");
-  window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
-}
-
 export default function CoursePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -133,13 +128,13 @@ export default function CoursePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={openTelegram} className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4">
-              <Icon name="Send" size={20} />
-              Купить в Telegram
+            <button className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4">
+              <Icon name="ShoppingCart" size={20} />
+              Купить
             </button>
           </div>
-          <p className="mt-4 text-rock-ash font-cormorant text-base" style={{ opacity: 0.6 }}>
-            Напишите нам — получите инструкцию по оплате и доступ к материалам
+          <p className="mt-4 font-cormorant text-rock-ash" style={{ fontSize: "11px", opacity: 0.55, lineHeight: "1.6" }}>
+            Нажимая кнопку «Оплатить», я принимаю условия публичной оферты и подтверждаю, что ознакомлен(а) с Политикой обработки персональных данных.
           </p>
         </div>
       </section>
