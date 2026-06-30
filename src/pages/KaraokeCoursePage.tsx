@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 import AnimatedWaveCanvas from "@/components/AnimatedWaveCanvas";
+import BuyConsent from "@/components/BuyConsent";
 
 const TELEGRAM_USERNAME = "ARTMANANDCO";
 const COURSE_PRICE = "700 ₽";
@@ -107,15 +108,7 @@ export default function KaraokeCoursePage() {
             <span className="text-rock-ash font-cormorant text-lg">— полный доступ навсегда</span>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-gold flex items-center gap-3 justify-center text-lg px-10 py-4">
-              <Icon name="ShoppingCart" size={20} />
-              Купить
-            </button>
-          </div>
-          <p className="mt-4 font-cormorant text-rock-ash" style={{ fontSize: "11px", opacity: 0.55, lineHeight: "1.6" }}>
-            Нажимая кнопку «Оплатить», я принимаю условия публичной оферты и подтверждаю, что ознакомлен(а) с Политикой обработки персональных данных.
-          </p>
+          <BuyConsent buttonClassName="justify-center mx-auto" />
         </div>
       </section>
 
