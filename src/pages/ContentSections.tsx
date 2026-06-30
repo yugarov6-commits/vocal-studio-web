@@ -126,8 +126,8 @@ function DirectionsSection() {
     <section id="directions" className="py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="section-eyebrow mb-4">Чему я учу</p>
-          <h2 className="section-title"><em>Направления</em></h2>
+          <p className="section-eyebrow mb-4">Что мы делаем</p>
+          <h2 className="section-title"><em>Направления</em> студии</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {DIRECTIONS.map((dir, i) => (
@@ -272,8 +272,8 @@ function CoursesSection() {
     <section id="courses" className="py-28" style={{ backgroundColor: "#111111" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
-          <p className="section-eyebrow mb-4">Программы</p>
-          <h2 className="section-title">Прокачка <em>голоса</em> (мастер-классы и лекции)</h2>
+          <p className="section-eyebrow mb-4">Каталог</p>
+          <h2 className="section-title">Курсы, книги и <em>мастер-классы</em></h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">
@@ -382,8 +382,8 @@ function ArticlesSection() {
       <section id="smart" className="py-28">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="section-eyebrow mb-4">Читать полезно</p>
-            <h2 className="section-title">Много умных слов <em>о главном</em></h2>
+            <p className="section-eyebrow mb-4">Методика</p>
+            <h2 className="section-title">Полезные материалы <em>о голосе</em></h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {(ARTICLES as ArticleWithText[]).map((article, i) => (
@@ -471,9 +471,9 @@ export default function ContentSections({ formData, setFormData, formSent, handl
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-10">
-            <p className="section-eyebrow mb-4">Приложение</p>
+            <p className="section-eyebrow mb-4">Направление</p>
             <h2 className="section-title mb-6">
-              Лечим <em>музыкой</em>
+              Музыкальная <em>терапия</em>
             </h2>
             <p className="font-cormorant text-rock-light text-xl leading-relaxed max-w-2xl mx-auto" style={{ opacity: 0.85 }}>
               Авторское приложение по музыкотерапии — ваш личный звуковой терапевт.

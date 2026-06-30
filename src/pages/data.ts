@@ -1,13 +1,13 @@
 export const HERO_IMAGE = "https://cdn.poehali.dev/files/bf1d80ba-4889-42b3-b652-08820026fac2.JPG";
 
 export const NAV_ITEMS = [
-  { label: "Личное дело", href: "#about" },
+  { label: "О студии", href: "#about" },
   { label: "Направления", href: "#directions" },
-  { label: "Прокачка голоса (мастер-классы и лекции)", href: "#courses" },
-  { label: "Много умных слов о главном", href: "#smart" },
+  { label: "Курсы и книги", href: "#courses" },
+  { label: "Методика", href: "#smart" },
   { label: "Диагностика слуха", href: "#hearing" },
-  { label: "Лечим музыкой", href: "#therapy" },
-  { label: "В кадре", href: "#gallery" },
+  { label: "Музыкотерапия", href: "#therapy" },
+  { label: "Галерея", href: "#gallery" },
   { label: "Отзывы", href: "#reviews" },
 ];
 

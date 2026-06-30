@@ -211,7 +211,7 @@ export default function HeroAboutSections() {
           {/* Над-заголовок */}
           <div className="flex items-center justify-center gap-4 mb-10 animate-fade-in">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-rock-gold/60" />
-            <p className="section-eyebrow text-[1.2rem] tracking-[0.35em]">Голосовой тренер</p>
+            <p className="section-eyebrow text-[1.2rem] tracking-[0.35em]">Творческая студия</p>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-rock-gold/60" />
           </div>
 
@@ -221,7 +221,7 @@ export default function HeroAboutSections() {
             <div className="flex-1 min-w-0">
 
               <h1 className="animate-fade-in scroll-delay-1 mb-2" style={{
-                fontSize: "clamp(4rem, 10vw, 8.5rem)",
+                fontSize: "clamp(2.5rem, 6vw, 5rem)",
                 fontFamily: "Cormorant, serif",
                 fontWeight: 300,
                 fontStyle: "italic",
@@ -230,7 +230,7 @@ export default function HeroAboutSections() {
                 letterSpacing: "-0.02em",
                 paddingTop: "0.1em",
               }}>
-                Анна
+                Театр Рока
               </h1>
               <h1 className="animate-fade-in scroll-delay-2 mb-8" style={{
                 fontSize: "clamp(4rem, 10vw, 8.5rem)",
@@ -245,13 +245,13 @@ export default function HeroAboutSections() {
                 backgroundSize: "200% auto",
                 animation: "shimmer-gold 5s linear infinite",
               }}>
-                АРТМАН
+                АРТМАН & КО
               </h1>
 
               <div className="flex items-center gap-4 mb-8 animate-fade-in scroll-delay-2">
                 <div className="h-px flex-1 max-w-[60px]" style={{ background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
                 <p className="font-cormorant text-lg italic" style={{ color: "rgba(201,168,76,0.7)" }}>
-                  Голос — это не инструмент. Это ты сам.
+                  Обучение. Книги. Выступления. Сообщество.
                 </p>
               </div>
 
@@ -266,14 +266,11 @@ export default function HeroAboutSections() {
 
               <p className="font-cormorant text-xl leading-relaxed mb-10 max-w-lg animate-fade-in scroll-delay-3"
                 style={{ color: "rgba(208,208,220,0.8)" }}>
-                Автор методики <em style={{ color: "#c9a84c" }}>"Чем он это сделал"</em>.
-                Основатель студии <em style={{ color: "#d0d0dc" }}>«Театр Рока Артман & Ко»</em>.
-                Превращаю голос в инструмент — мощный, живой, неповторимый.
+                Авторская студия под руководством <em style={{ color: "#d0d0dc" }}>Анны Артман</em> — онлайн-курсы, книги, мастер-классы и методики для тех, кто хочет раскрыть свой голос и выйти на сцену.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10 animate-fade-in scroll-delay-4">
-                <a href="#courses" className="btn-gold">Мастер-классы</a>
-
+                <a href="#courses" className="btn-gold">Все курсы и книги</a>
               </div>
 
               {/* Статы */}
@@ -335,20 +332,18 @@ export default function HeroAboutSections() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-8 h-px bg-rock-gold/60" />
-                <p className="section-eyebrow">Личное дело</p>
+                <p className="section-eyebrow">О студии</p>
               </div>
               <h2 className="section-title mb-10 line-gold" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)" }}>
-                Дорогой <em>друг!</em>
+                Театр Рока <em>Артман & Ко</em>
               </h2>
               <div className="space-y-5 font-cormorant text-lg leading-relaxed" style={{ color: "rgba(208,208,220,0.82)" }}>
-                <p>🦔 Я Анна Артман — тренер ГОЛОСА И МОЗГА, специалист по всем видам экстремальных техник вокала, горловому и обертональному пению, джазовым стандартам и современному эстрадному вокалу в целом.</p>
-                <p>🦔 У меня три профильных высших образования: филологическое, режиссёрское и музыкальное. А также квалификации фонопеда и музыкального психотерапевта.</p>
-                <p>🎼 Мной изучены методики CVT, EVT, SLS и BVT, на основе которых я разработала собственную методику <span style={{ color: "#c9a84c" }} className="italic">«Чем он это сделал»</span>.</p>
-                <p>🦔 Я не добрый и мягкий педагог! Ругаюсь, бывает крепко! Могу гонять до мокрых трусов. Но стараюсь каждому дать столько, сколько он может взять.</p>
+                <p>Авторская творческая студия, основанная Анной Артман — специалистом по всем видам экстремальных техник вокала, горловому и обертональному пению, джазу и современной эстраде.</p>
+                <p>Здесь учат не просто петь — учат пользоваться голосом как инструментом: понимать механику, управлять телом и мозгом, выходить на сцену с уверенностью.</p>
+                <p>В каталоге студии — онлайн-курсы, авторские методички, книги и мастер-классы для любого уровня: от полного новичка до практикующего музыканта.</p>
                 <p style={{ color: "#c9a84c" }} className="italic font-semibold">
-                  НЕ учу петь — учу пользоваться своим аппаратом: механикой и электроникой (головной мозг).
+                  Методика «Чем он это сделал» — на основе CVT, EVT, SLS и BVT, адаптированная для самостоятельного обучения.
                 </p>
-                <p>Ваша Артман! ❤️</p>
               </div>
 
               <div className="grid grid-cols-3 gap-6 mt-12 pt-10" style={{ borderTop: "1px solid rgba(201,168,76,0.12)" }}>

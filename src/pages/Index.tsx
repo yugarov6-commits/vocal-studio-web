@@ -44,7 +44,7 @@ export default function Index() {
       <footer style={{ backgroundColor: "#080808", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
-            © 2025 Анна Артман. Все права защищены.
+            © 2025 Театр Рока Артман & Ко. Все права защищены.
           </p>
           <a href="mailto:I@aartman.ru" className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash hover:text-rock-gold transition-colors">
             I@aartman.ru
