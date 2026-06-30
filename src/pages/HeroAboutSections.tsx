@@ -183,109 +183,62 @@ export default function HeroAboutSections() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-        {/* Фон */}
-        <div className="absolute inset-0 bg-[#080808]" />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 120% 80% at 60% 40%, rgba(122,21,37,0.18) 0%, transparent 55%)" }} />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 20% 70%, rgba(201,168,76,0.07) 0%, transparent 50%)" }} />
+        {/* Фото на весь фон */}
+        <div className="absolute inset-0">
+          <img
+            src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/24816572-50fa-4d7b-a522-fb859536e950.jpg"
+            alt="Анна Артман"
+            className="w-full h-full object-cover object-top"
+            style={{ filter: "brightness(0.45) contrast(1.1)" }}
+          />
+        </div>
+
+        {/* Затемняющие градиенты */}
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(8,8,8,0.5) 0%, rgba(8,8,8,0.1) 40%, rgba(8,8,8,0.3) 70%, rgba(8,8,8,0.85) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(122,21,37,0.15) 0%, transparent 70%)" }} />
         <Equalizer />
 
         {/* Декоративные линии */}
         <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5) 50%, transparent)" }} />
-        <div className="absolute top-0 right-0 w-px h-full" style={{ background: "linear-gradient(180deg, transparent, rgba(201,168,76,0.2) 30%, rgba(122,21,37,0.3) 70%, transparent)" }} />
         <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(122,21,37,0.5) 50%, transparent)" }} />
 
-        {/* Угловые акценты */}
-        <div className="absolute top-28 left-6 w-16 h-16 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-px bg-rock-gold/40" />
-          <div className="absolute top-0 left-0 w-px h-full bg-rock-gold/40" />
-        </div>
-        <div className="absolute top-28 right-6 w-16 h-16 pointer-events-none">
-          <div className="absolute top-0 right-0 w-full h-px bg-rock-gold/40" />
-          <div className="absolute top-0 right-0 w-px h-full bg-rock-gold/40" />
-        </div>
+        {/* Контент по центру */}
+        <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 pt-24 pb-24 text-center">
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-36 pb-16">
-
-          {/* Логотип — на всю ширину */}
-          <div className="animate-fade-in mb-6 flex justify-center">
+          {/* Логотип */}
+          <div className="animate-fade-in mb-8 w-full flex justify-center">
             <img
               src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
               alt="Театр Рока Артман & Ко"
-              className="w-full max-w-5xl"
+              className="w-full max-w-2xl"
               style={{
-                filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 60px rgba(201,168,76,0.5))",
+                filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(2) contrast(1.3) drop-shadow(0 0 60px rgba(201,168,76,0.7))",
                 mixBlendMode: "screen",
               }}
             />
           </div>
 
-          <div className="flex items-end gap-8 lg:gap-16">
+          {/* Слоган */}
+          <p className="font-cormorant text-xl md:text-2xl italic mb-10 animate-fade-in scroll-delay-2"
+            style={{ color: "rgba(201,168,76,0.85)", textShadow: "0 2px 20px rgba(0,0,0,0.8)" }}>
+            Обучение. Книги. Выступления. Сообщество.
+          </p>
 
-            {/* Текст */}
-            <div className="flex-1 min-w-0">
+          {/* Кнопка */}
+          <div className="animate-fade-in scroll-delay-3 mb-14">
+            <a href="#courses" className="btn-gold text-base px-10 py-4">Все курсы и книги</a>
+          </div>
 
-              <div className="flex items-center gap-4 mb-8 animate-fade-in scroll-delay-2">
-                <div className="h-px flex-1 max-w-[60px]" style={{ background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
-                <p className="font-cormorant text-lg italic" style={{ color: "rgba(201,168,76,0.7)" }}>
-                  Обучение. Книги. Выступления. Сообщество.
-                </p>
+          {/* Статы */}
+          <div className="flex gap-12 animate-fade-in scroll-delay-4">
+            {[{ num: "20+", label: "лет" }, { num: "500+", label: "учеников" }, { num: "6", label: "направлений" }].map((s) => (
+              <div key={s.label}>
+                <div className="font-cormorant font-semibold text-3xl text-gradient-gold">{s.num}</div>
+                <div className="font-oswald text-[9px] tracking-[0.3em] uppercase mt-1" style={{ color: "rgba(208,208,220,0.5)" }}>{s.label}</div>
               </div>
-
-              <div className="flex flex-wrap gap-2 mb-10 animate-fade-in scroll-delay-3">
-                {["Рок & экстрим вокал", "Горловое пение", "Фонопедия", "Муз. психотерапия", "Сонграйтинг"].map((tag) => (
-                  <span key={tag} className="font-oswald text-[9px] tracking-[0.25em] uppercase px-3 py-1.5"
-                    style={{ border: "1px solid rgba(201,168,76,0.2)", color: "rgba(201,168,76,0.6)", background: "rgba(201,168,76,0.04)" }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <p className="font-cormorant text-xl leading-relaxed mb-10 max-w-lg animate-fade-in scroll-delay-3"
-                style={{ color: "rgba(208,208,220,0.8)" }}>
-                Авторская студия под руководством <em style={{ color: "#d0d0dc" }}>Анны Артман</em> — онлайн-курсы, книги, мастер-классы и методики для тех, кто хочет раскрыть свой голос и выйти на сцену.
-              </p>
-
-              <div className="flex flex-wrap gap-4 mb-10 animate-fade-in scroll-delay-4">
-                <a href="#courses" className="btn-gold">Все курсы и книги</a>
-              </div>
-
-              {/* Статы */}
-              <div className="flex gap-10 animate-fade-in scroll-delay-5">
-                {[{ num: "20+", label: "лет" }, { num: "500+", label: "учеников" }, { num: "6", label: "направлений" }].map((s) => (
-                  <div key={s.label}>
-                    <div className="font-cormorant font-semibold text-3xl text-gradient-gold">{s.num}</div>
-                    <div className="font-oswald text-[9px] tracking-[0.3em] uppercase mt-1" style={{ color: "rgba(208,208,220,0.4)" }}>{s.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Фото */}
-            <div className="hidden lg:block flex-shrink-0 w-[400px] relative animate-fade-in scroll-delay-2" style={{ marginBottom: "-4rem" }}>
-              <div className="absolute -inset-4 pointer-events-none"
-                style={{ background: "radial-gradient(ellipse at 50% 60%, rgba(201,168,76,0.12) 0%, transparent 70%)" }} />
-              <img
-                src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/24816572-50fa-4d7b-a522-fb859536e950.jpg"
-                alt="Анна Артман"
-                className="w-full object-contain relative z-10"
-                style={{
-                  maskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%)",
-                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 80%, transparent 100%)",
-                  filter: "contrast(1.05) brightness(0.95) drop-shadow(0 0 60px rgba(122,21,37,0.4))",
-                }}
-              />
-              {/* Золотая рамка-акцент */}
-              <div className="absolute bottom-16 -left-4 w-8 h-8 pointer-events-none z-20">
-                <div className="absolute bottom-0 left-0 w-full h-px bg-rock-gold/50" />
-                <div className="absolute bottom-0 left-0 w-px h-full bg-rock-gold/50" />
-              </div>
-              <div className="absolute top-12 -right-4 w-8 h-8 pointer-events-none z-20">
-                <div className="absolute top-0 right-0 w-full h-px bg-rock-gold/50" />
-                <div className="absolute top-0 right-0 w-px h-full bg-rock-gold/50" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
