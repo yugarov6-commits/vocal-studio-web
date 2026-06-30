@@ -520,19 +520,19 @@ export default function ContentSections({ formData, setFormData, formSent, handl
       <WaveDivider />
 
       {/* CONSULTATION */}
-      <section id="consultation" className="py-28 relative overflow-hidden" style={{ backgroundColor: "#111111" }}>
+      <section id="consultation" className="py-20 relative overflow-hidden" style={{ backgroundColor: "#111111" }}>
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rock-gold/40 to-transparent" />
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%, rgba(149,79,255,0.1) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(ellipse 60% 80% at 50% 100%, rgba(149,79,255,0.08) 0%, transparent 70%)" }} />
         <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
-          <p className="section-eyebrow mb-4">Первый шаг</p>
-          <h2 className="section-title mb-4">Запись на <em>консультацию</em></h2>
+          <p className="section-eyebrow mb-4">Остались вопросы?</p>
+          <h2 className="section-title mb-4">Проконсультируем по <em>программе</em></h2>
           <p className="font-cormorant text-rock-light text-xl leading-relaxed mb-10" style={{ opacity: 0.8 }}>
-            Бесплатная 30-минутная консультация — разберём ваш запрос и подберём программу. Напишите нам в Telegram, и мы ответим быстро.
+            Не знаете, какой курс подойдёт именно вам? Напишите нам в Telegram — поможем разобраться и выбрать нужное.
           </p>
           <button
             onClick={() => {
-              const text = encodeURIComponent("Здравствуйте! Хочу записаться на консультацию.");
+              const text = encodeURIComponent("Здравствуйте! Хочу проконсультироваться по программе.");
               window.open(`https://t.me/ARTMANANDCO?text=${text}`, "_blank");
             }}
             className="btn-gold inline-flex items-center gap-3 text-xl px-12 py-5"
