@@ -220,33 +220,17 @@ export default function HeroAboutSections() {
             {/* Текст */}
             <div className="flex-1 min-w-0">
 
-              <h1 className="animate-fade-in scroll-delay-1 mb-2" style={{
-                fontSize: "clamp(2.5rem, 6vw, 5rem)",
-                fontFamily: "Cormorant, serif",
-                fontWeight: 300,
-                fontStyle: "italic",
-                lineHeight: 1.1,
-                color: "#f0ece4",
-                letterSpacing: "-0.02em",
-                paddingTop: "0.1em",
-              }}>
-                Театр Рока
-              </h1>
-              <h1 className="animate-fade-in scroll-delay-2 mb-8" style={{
-                fontSize: "clamp(4rem, 10vw, 8.5rem)",
-                fontFamily: "'Arial Black', Arial, sans-serif",
-                fontWeight: 900,
-                lineHeight: 0.9,
-                letterSpacing: "-0.03em",
-                background: "linear-gradient(135deg, #8a6820 0%, #c9a84c 35%, #f0d878 55%, #c9a84c 75%, #8a6820 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                backgroundSize: "200% auto",
-                animation: "shimmer-gold 5s linear infinite",
-              }}>
-                АРТМАН & КО
-              </h1>
+              <div className="animate-fade-in scroll-delay-1 mb-8">
+                <img
+                  src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
+                  alt="Театр Рока Артман & Ко"
+                  className="w-full max-w-[560px]"
+                  style={{
+                    filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 40px rgba(201,168,76,0.6))",
+                    mixBlendMode: "screen",
+                  }}
+                />
+              </div>
 
               <div className="flex items-center gap-4 mb-8 animate-fade-in scroll-delay-2">
                 <div className="h-px flex-1 max-w-[60px]" style={{ background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
