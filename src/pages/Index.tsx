@@ -46,6 +46,9 @@ export default function Index() {
           <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
             © 2025 Анна Артман. Все права защищены.
           </p>
+          <a href="mailto:I@aartman.ru" className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash hover:text-rock-gold transition-colors">
+            I@aartman.ru
+          </a>
           <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
             Самозанятый · ИНН 121523125266
           </p>
