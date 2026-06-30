@@ -93,9 +93,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
             <a href="#reviews" className="btn-rock text-[9px] py-2 px-4">
               Отзывы
             </a>
-            <a href="#consultation" className="btn-gold text-[9px] py-2 px-4">
-              Записаться
-            </a>
+
           </div>
 
           {/* Бургер */}
@@ -149,11 +147,7 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
             ))}
           </div>
 
-          <div className="px-8 pb-10 relative z-10">
-            <a href="#consultation" className="btn-gold w-full text-center block py-4" onClick={() => setMenuOpen(false)}>
-              Записаться на консультацию
-            </a>
-          </div>
+
         </div>
       )}
     </>

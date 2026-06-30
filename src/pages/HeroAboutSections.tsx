@@ -273,7 +273,7 @@ export default function HeroAboutSections() {
 
               <div className="flex flex-wrap gap-4 mb-10 animate-fade-in scroll-delay-4">
                 <a href="#courses" className="btn-gold">Мастер-классы</a>
-                <a href="#consultation" className="btn-rock">Записаться</a>
+
               </div>
 
               {/* Статы */}
