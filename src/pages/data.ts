@@ -2,7 +2,7 @@ export const HERO_IMAGE = "https://cdn.poehali.dev/files/bf1d80ba-4889-42b3-b652
 
 export const NAV_ITEMS = [
   { label: "Личное дело", href: "#about" },
-  { label: "Чему научу", href: "#directions" },
+  { label: "Направления", href: "#directions" },
   { label: "Прокачка голоса (мастер-классы и лекции)", href: "#courses" },
   { label: "Много умных слов о главном", href: "#smart" },
   { label: "Диагностика слуха", href: "#hearing" },
