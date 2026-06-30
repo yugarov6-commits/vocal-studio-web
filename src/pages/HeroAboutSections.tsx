@@ -208,29 +208,23 @@ export default function HeroAboutSections() {
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-36 pb-16">
 
-          {/* Над-заголовок */}
-          <div className="flex items-center justify-center gap-4 mb-10 animate-fade-in">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-rock-gold/60" />
-            <p className="section-eyebrow text-[1.2rem] tracking-[0.35em]">Творческая студия</p>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-rock-gold/60" />
+          {/* Логотип — на всю ширину */}
+          <div className="animate-fade-in mb-6 flex justify-center">
+            <img
+              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
+              alt="Театр Рока Артман & Ко"
+              className="w-full max-w-5xl"
+              style={{
+                filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 60px rgba(201,168,76,0.5))",
+                mixBlendMode: "screen",
+              }}
+            />
           </div>
 
           <div className="flex items-end gap-8 lg:gap-16">
 
             {/* Текст */}
             <div className="flex-1 min-w-0">
-
-              <div className="animate-fade-in scroll-delay-1 mb-8">
-                <img
-                  src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
-                  alt="Театр Рока Артман & Ко"
-                  className="w-full max-w-[560px]"
-                  style={{
-                    filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 40px rgba(201,168,76,0.6))",
-                    mixBlendMode: "screen",
-                  }}
-                />
-              </div>
 
               <div className="flex items-center gap-4 mb-8 animate-fade-in scroll-delay-2">
                 <div className="h-px flex-1 max-w-[60px]" style={{ background: "linear-gradient(90deg, #c9a84c, transparent)" }} />
