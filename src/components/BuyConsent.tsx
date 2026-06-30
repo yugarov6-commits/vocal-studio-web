@@ -29,7 +29,7 @@ export default function BuyConsent({ className = "", buttonClassName = "", onBuy
           </button>
           <span className="font-cormorant text-rock-ash leading-snug" style={{ fontSize: "13px" }}>
             Я принимаю условия{" "}
-            <a href="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/769c6f68-e139-411a-8373-35ad7a2b1e66.docx" target="_blank" rel="noopener noreferrer" className="text-rock-gold underline underline-offset-2 hover:opacity-80 transition-opacity">
+            <a href="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/29c2e690-124b-4a5f-bdf3-536ea066e262.docx" target="_blank" rel="noopener noreferrer" className="text-rock-gold underline underline-offset-2 hover:opacity-80 transition-opacity">
               Публичной оферты
             </a>
             .
@@ -49,7 +49,11 @@ export default function BuyConsent({ className = "", buttonClassName = "", onBuy
             {personal && <Icon name="Check" size={12} className="text-rock-gold" />}
           </button>
           <span className="font-cormorant text-rock-ash leading-snug" style={{ fontSize: "13px" }}>
-            Я даю согласие на обработку персональных данных и подтверждаю, что ознакомлен(а) с{" "}
+            Я даю{" "}
+            <a href="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/769c6f68-e139-411a-8373-35ad7a2b1e66.docx" target="_blank" rel="noopener noreferrer" className="text-rock-gold underline underline-offset-2 hover:opacity-80 transition-opacity">
+              согласие на обработку персональных данных
+            </a>{" "}
+            и подтверждаю, что ознакомлен(а) с{" "}
             <a href="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/4d9707b2-91e1-4faf-bdaa-b48148c8eaa6.docx" target="_blank" rel="noopener noreferrer" className="text-rock-gold underline underline-offset-2 hover:opacity-80 transition-opacity">
               Политикой обработки персональных данных
             </a>
