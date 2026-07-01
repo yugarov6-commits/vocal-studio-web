@@ -121,7 +121,13 @@ export const VIDEOS = [
 
 ];
 
-export const GALLERY: { src: string; alt: string }[] = [];
+export const GALLERY = [
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/82b8abd5-891c-40c2-bd9f-f44be22e3636.jpg", alt: "Анна Артман и ученица на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/5868e993-4f20-4ca3-a5d9-fff509d4329b.jpg", alt: "Ученица поёт с микрофоном" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/6aacdfb2-8ca8-494f-a7ff-18e2716c0b04.jpg", alt: "Анна Артман с учениками на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/91ece054-9199-44ec-aa6a-1dfb9161c8d5.jpg", alt: "Три певицы на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/5fceaf92-ec77-412f-bdec-840fa0ad1cee.JPG", alt: "Ученицы с зонтами на выступлении" },
+];
 
 export const ARTICLES = [
   {
