@@ -53,7 +53,7 @@ export default function CharismaCoursePage() {
           <div className="absolute inset-0 pointer-events-none hidden md:block"
             style={{ background: "radial-gradient(ellipse 80% 60% at 30% 50%, rgba(255,200,0,0.07) 0%, transparent 70%)" }} />
 
-          <p className="section-eyebrow mb-5 relative z-10">Авторский курс · Анна Артман</p>
+          <p className="section-eyebrow mb-5 relative z-10">Мини-курс · Анна Артман</p>
 
           <h1 className="leading-none mb-2 uppercase relative z-10"
             style={{
