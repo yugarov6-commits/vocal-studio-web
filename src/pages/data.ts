@@ -137,6 +137,10 @@ export const GALLERY = [
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/2ef35064-a611-43b9-902f-5c51266cd361.jpg", alt: "Ученица поёт в синем свете на сцене" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/f08a2d9c-e71e-4a9d-a145-0c666d2be7a9.jpg", alt: "Финальный поклон с цветами" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/03a76665-360d-46a5-870e-51a1717719e9.jpg", alt: "Ученицы на сцене в серых платьях" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/45c4a72c-b4aa-4c1f-898e-b73e1b8eecf1.jpg", alt: "Ученицы поднимают руки вверх на поклоне" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c6e36614-1afb-4f27-a246-fe448c2e3daa.jpg", alt: "Артисты стоят в ряд на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/32250b0d-13f2-4139-bf92-dc0196e931b0.jpg", alt: "Ученицы и тренер поют на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c882653e-2878-4ccc-be75-d6856dd48e7e.jpg", alt: "Три артистки поют в синем свете" },
 ];
 
 export const ARTICLES = [
