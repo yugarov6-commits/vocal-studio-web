@@ -132,6 +132,11 @@ export const GALLERY = [
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/d97d20b2-d202-44a6-9584-2a7f64948b9a.jpg", alt: "Выступление в зале Artman & Co Театр Рока" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c0713736-0e0f-4aab-8278-2e3c6521d135.jpg", alt: "Финальный выход всех артистов на сцену" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/7a2e3885-a9b7-4a7e-ba06-486b22e0071b.jpg", alt: "Ученица в синем платье в дыму" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/8bb22e79-120a-4f89-b4d2-170ea5ddb7ab.jpg", alt: "Ученица поёт на коленях на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1ce627f4-0f57-4639-813c-c233ddd88e08.jpg", alt: "Ученица в чёрном платье в дыму на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/2ef35064-a611-43b9-902f-5c51266cd361.jpg", alt: "Ученица поёт в синем свете на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/f08a2d9c-e71e-4a9d-a145-0c666d2be7a9.jpg", alt: "Финальный поклон с цветами" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/03a76665-360d-46a5-870e-51a1717719e9.jpg", alt: "Ученицы на сцене в серых платьях" },
 ];
 
 export const ARTICLES = [
