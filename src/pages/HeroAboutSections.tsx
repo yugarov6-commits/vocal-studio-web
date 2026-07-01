@@ -212,7 +212,7 @@ export default function HeroAboutSections() {
             <img
               src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
               alt="Театр Рока Артман & Ко"
-              className="w-full max-w-2xl"
+              className="w-full max-w-4xl"
               style={{
                 filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(2) contrast(1.3) drop-shadow(0 0 60px rgba(201,168,76,0.7))",
                 mixBlendMode: "screen",
