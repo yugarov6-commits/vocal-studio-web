@@ -127,6 +127,11 @@ export const GALLERY = [
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/6aacdfb2-8ca8-494f-a7ff-18e2716c0b04.jpg", alt: "Анна Артман с учениками на сцене" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/91ece054-9199-44ec-aa6a-1dfb9161c8d5.jpg", alt: "Три певицы на сцене" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/5fceaf92-ec77-412f-bdec-840fa0ad1cee.JPG", alt: "Ученицы с зонтами на выступлении" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/b5d044e5-7e86-492b-9cca-e9d489d68240.JPG", alt: "Ученица поёт на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/f58cb7fc-60aa-444c-a40c-31a6c045fb32.JPG", alt: "Групповое фото учеников и педагогов" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/d97d20b2-d202-44a6-9584-2a7f64948b9a.jpg", alt: "Выступление в зале Artman & Co Театр Рока" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c0713736-0e0f-4aab-8278-2e3c6521d135.jpg", alt: "Финальный выход всех артистов на сцену" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/7a2e3885-a9b7-4a7e-ba06-486b22e0071b.jpg", alt: "Ученица в синем платье в дыму" },
 ];
 
 export const ARTICLES = [
