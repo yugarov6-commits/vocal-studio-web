@@ -214,7 +214,7 @@ export default function HeroAboutSections() {
               alt="Театр Рока Артман & Ко"
               className="w-full max-w-6xl"
               style={{
-                filter: "drop-shadow(0 0 60px rgba(201,168,76,0.7))",
+                filter: "brightness(10) drop-shadow(0 0 60px rgba(201,168,76,0.7))",
                 mixBlendMode: "screen",
               }}
             />
