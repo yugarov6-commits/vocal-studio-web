@@ -20,9 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				cormorant: ['Cormorant', 'serif'],
-				oswald: ['Oswald', 'sans-serif'],
-				caveat: ['Caveat', 'cursive'],
+				cormorant: ['Bebas Neue', 'sans-serif'],
+				oswald: ['Bebas Neue', 'sans-serif'],
+				caveat: ['Bebas Neue', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
