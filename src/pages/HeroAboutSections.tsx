@@ -214,8 +214,8 @@ export default function HeroAboutSections() {
               alt="Театр Рока Артман & Ко"
               className="w-full max-w-6xl"
               style={{
-                mixBlendMode: "screen",
-                filter: "invert(1) contrast(1.5)",
+                mixBlendMode: "lighten",
+                filter: "contrast(1.8) brightness(0.95)",
               }}
             />
           </div>
