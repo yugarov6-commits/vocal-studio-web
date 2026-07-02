@@ -185,19 +185,12 @@ export default function HeroAboutSections() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-        {/* Фото на весь фон */}
-        <div className="absolute inset-0">
-          <img
-            src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/24816572-50fa-4d7b-a522-fb859536e950.jpg"
-            alt="Анна Артман"
-            className="w-full h-full object-cover object-top"
-            style={{ filter: "brightness(0.45) contrast(1.1)" }}
-          />
-        </div>
-
-        {/* Затемняющие градиенты */}
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(8,8,8,0.5) 0%, rgba(8,8,8,0.1) 40%, rgba(8,8,8,0.3) 70%, rgba(8,8,8,0.85) 100%)" }} />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(122,21,37,0.15) 0%, transparent 70%)" }} />
+        {/* Фон — тёмный градиент с фиолетово-золотым свечением */}
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 100% 80% at 50% 40%, rgba(60,10,80,0.95) 0%, rgba(8,8,8,1) 70%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(100,20,120,0.3) 0%, transparent 70%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 30% at 30% 60%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 30% at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(8,8,8,0.4) 0%, transparent 30%, rgba(8,8,8,0.7) 100%)" }} />
         <Equalizer />
 
         {/* Декоративные линии */}
@@ -212,7 +205,7 @@ export default function HeroAboutSections() {
             <img
               src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/3d505fe2-54ca-490f-a2f5-94ea40626c4b.png"
               alt="Театр Рока Артман & Ко"
-              className="w-full max-w-6xl"
+              className="w-full max-w-2xl md:max-w-3xl"
             />
           </div>
 
