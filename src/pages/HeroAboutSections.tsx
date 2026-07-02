@@ -215,7 +215,7 @@ export default function HeroAboutSections() {
               className="w-full max-w-6xl"
               style={{
                 mixBlendMode: "screen",
-                filter: "drop-shadow(0 0 60px rgba(201,168,76,0.7))",
+                filter: "contrast(2) brightness(3) drop-shadow(0 0 60px rgba(201,168,76,0.7))",
               }}
             />
           </div>
