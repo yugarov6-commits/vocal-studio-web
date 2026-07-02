@@ -141,6 +141,15 @@ export const GALLERY = [
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c6e36614-1afb-4f27-a246-fe448c2e3daa.jpg", alt: "Артисты стоят в ряд на сцене" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/32250b0d-13f2-4139-bf92-dc0196e931b0.jpg", alt: "Ученицы и тренер поют на сцене" },
   { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/c882653e-2878-4ccc-be75-d6856dd48e7e.jpg", alt: "Три артистки поют в синем свете" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/655cdab4-6ed5-4657-b176-f375da76d46d.jpg", alt: "Ученик поёт с микрофоном на вечере" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/10941b85-7a01-4111-b68f-1863bd343174.JPG", alt: "Групповое фото Хэллоуин" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/32cadec6-a235-48d2-be1e-dcc208c1dd5a.JPG", alt: "Ученица в образе доктора на Хэллоуин" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/4e761b7c-3841-42cb-93ea-14fe2a3470ed.JPG", alt: "Ученица поёт с бокалом на Хэллоуин" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/0071d540-840e-4231-ac11-c60dc21ee7fb.JPG", alt: "Ученица в белом платье на сцене Хэллоуин" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/cd5fd22e-1194-43d5-bcf7-de3d76120709.jpg", alt: "Ученица с бокалом на сцене" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/b21b3a17-2899-429f-a6d8-624114a5cbe8.jpg", alt: "Ученик в образе на Хэллоуин" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1d46a8ea-4332-47b7-beb1-776e109e518f.jpg", alt: "Анна Артман поёт на сцене Artman & Co" },
+  { src: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/de15b19d-c8d7-4f37-8f15-2659acc28763.jpg", alt: "Анна Артман выступает на сцене" },
 ];
 
 export const ARTICLES = [
