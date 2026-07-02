@@ -63,10 +63,10 @@ textarea {
     font-family: "Bebas Neue", sans-serif;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    overflow-wrap: break-word;
-    word-break: break-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   p,
@@ -76,8 +76,8 @@ textarea {
   h2,
   h3,
   h4 {
-    hyphens: auto;
-    -webkit-hyphens: auto;
+    hyphens: none;
+    -webkit-hyphens: none;
   }
 
   html {
