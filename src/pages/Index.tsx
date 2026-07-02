@@ -49,9 +49,7 @@ export default function Index() {
           <a href="mailto:I@aartman.ru" className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash hover:text-rock-gold transition-colors">
             I@aartman.ru
           </a>
-          <p className="font-oswald text-[10px] tracking-[0.2em] uppercase text-rock-ash">
-            Самозанятый · ИНН 121523125266
-          </p>
+
         </div>
       </footer>
     </div>
