@@ -281,7 +281,7 @@ export default function HeroAboutSections() {
                 background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(201,168,76,0.06) 0%, transparent 70%)"
               }} />
               <img
-                src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/37875366-5357-467d-8608-88ccaf3906ed.JPG"
+                src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/3d2eec47-7cfb-426b-bb7b-d601ef509acc.png"
                 alt="Rock & Extreme Vocal Coach"
                 className="w-full object-contain relative z-10"
                 style={{
