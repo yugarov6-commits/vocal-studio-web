@@ -210,12 +210,11 @@ export default function HeroAboutSections() {
           {/* Логотип */}
           <div className="animate-fade-in mb-8 mt-16 w-full flex justify-center">
             <img
-              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/9303eaa8-b5a6-41c7-8fdf-8d0710bfeb41.png"
+              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/077df622-28cc-4beb-b78d-829d82ba9a33.png"
               alt="Театр Рока Артман & Ко"
               className="w-full max-w-6xl"
               style={{
-                mixBlendMode: "screen",
-                filter: "contrast(2) brightness(3) drop-shadow(0 0 60px rgba(201,168,76,0.7))",
+                mixBlendMode: "multiply",
               }}
             />
           </div>
