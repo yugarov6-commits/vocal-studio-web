@@ -50,16 +50,10 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
         <div className="w-full px-4 py-2 flex items-center justify-between gap-2">
 
           {/* Лого */}
-          <a href="#" className="flex items-center select-none group shrink-0">
-            <img
-              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
-              alt="Театр Рока Артман & Ко"
-              className="h-28 w-auto object-contain transition-all duration-500 group-hover:scale-105"
-              style={{
-                filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 20px rgba(201,168,76,0.8))",
-                mixBlendMode: "screen",
-              }}
-            />
+          <a href="#" className="flex items-center select-none group shrink-0 font-oswald tracking-widest uppercase text-lg transition-all duration-300"
+            style={{ color: "#c9a84c", textShadow: "0 0 20px rgba(201,168,76,0.6)" }}
+          >
+            Театр Рока
           </a>
 
           {/* Навигация */}
@@ -118,10 +112,9 @@ export default function NavBar({ scrolled, menuOpen, setMenuOpen }: NavBarProps)
 
           <div className="flex items-center justify-between px-6 py-4 relative z-10"
             style={{ borderBottom: "1px solid rgba(201,168,76,0.12)" }}>
-            <img
-              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1dffc1b8-8ec4-4dd2-b16b-872335c0b4e4.png"
-              alt="Театр Рока Артман & Ко" className="h-14 w-auto object-contain" style={{ filter: "invert(1) sepia(1) saturate(4) hue-rotate(5deg) brightness(1.8) contrast(1.3) drop-shadow(0 0 12px rgba(201,168,76,0.5))", mixBlendMode: "screen" }}
-            />
+            <span className="font-oswald tracking-widest uppercase text-lg" style={{ color: "#c9a84c", textShadow: "0 0 20px rgba(201,168,76,0.6)" }}>
+              Театр Рока
+            </span>
             <button onClick={() => setMenuOpen(false)} style={{ color: "rgba(201,168,76,0.7)" }}>
               <Icon name="X" size={22} />
             </button>
