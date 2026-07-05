@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import CoursePage from "./pages/CoursePage";
 import CourseDownloadPage from "./pages/CourseDownloadPage";
 import BookPage from "./pages/BookPage";
+import ExtremeVocalBookPage from "./pages/ExtremeVocalBookPage";
 import BearCoursePage from "./pages/BearCoursePage";
 import KaraokeCoursePage from "./pages/KaraokeCoursePage";
 import CharismaCoursePage from "./pages/CharismaCoursePage";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/course/phonic-resonance" element={<CoursePage />} />
           <Route path="/course/phonic-resonance/download" element={<CourseDownloadPage />} />
           <Route path="/book" element={<BookPage />} />
+          <Route path="/book/extreme-vocal" element={<ExtremeVocalBookPage />} />
           <Route path="/course/bear-ear" element={<BearCoursePage />} />
           <Route path="/course/karaoke-base" element={<KaraokeCoursePage />} />
           <Route path="/course/charisma" element={<CharismaCoursePage />} />
