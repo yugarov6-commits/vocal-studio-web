@@ -40,8 +40,8 @@ export const BOOK_EXTREME_VOCAL = {
   ],
   cover: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1a5fc624-901f-48f4-890b-2da361bca52e.png",
   formats: [
-    { type: "PDF", icon: "📄", price: "500 ₽", desc: "Читай сразу после оплаты на любом устройстве" },
-    { type: "EPUB", icon: "📱", price: "500 ₽", desc: "Удобный формат для читалок — iPhone, Kindle, Android" },
+    { type: "PDF", icon: "📄", price: "600 ₽", desc: "Читай сразу после оплаты на любом устройстве" },
+    { type: "EPUB", icon: "📱", price: "600 ₽", desc: "Удобный формат для читалок — iPhone, Kindle, Android" },
   ],
 };
 
@@ -124,7 +124,7 @@ export const COURSES = [
     title: "Экстра-нормальный вокал",
     desc: "Практическое руководство по жёстким рок- и метал-техникам вокала без боли и срыва голоса. Скрим, гроул, дисторшн — системно и безопасно.",
     duration: "PDF / EPUB",
-    price: "500 ₽",
+    price: "600 ₽",
     tag: "Книга",
     link: "/book/extreme-vocal",
     cover: "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/1a5fc624-901f-48f4-890b-2da361bca52e.png",
