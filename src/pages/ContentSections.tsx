@@ -342,11 +342,11 @@ function CoursesSection() {
                 Комплект всех курсов
               </h3>
               <p className="font-cormorant text-lg text-rock-light mb-5" style={{ opacity: 0.75 }}>
-                Медведь на ухо · Фонический резонанс · База вокала · Харизма 2.0 · Книга «Сила твоего голоса»
+                Медведь на ухо · Фонический резонанс · База вокала · Харизма 2.0 · Книга «Сила твоего голоса» · Книга «Экстра-нормальный вокал»
               </p>
               <div className="flex items-baseline gap-4">
-                <span className="font-cormorant text-4xl font-semibold text-gradient-gold">3 000 ₽</span>
-                <span className="font-oswald text-sm tracking-widest uppercase text-rock-ash line-through">4 600 ₽</span>
+                <span className="font-cormorant text-4xl font-semibold text-gradient-gold">3 400 ₽</span>
+                <span className="font-oswald text-sm tracking-widest uppercase text-rock-ash line-through">5 200 ₽</span>
                 <span className="font-oswald text-[10px] tracking-[0.2em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">
                   −35%
                 </span>
