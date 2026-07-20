@@ -31,7 +31,7 @@ function GallerySection() {
     <section id="gallery" className="py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="section-eyebrow mb-4">Сцена и студия</p>
+          <p className="section-eyebrow mb-4">Сцена и платформа</p>
           <h2 className="section-title"><em>В кадре</em></h2>
         </div>
 
@@ -127,7 +127,7 @@ function DirectionsSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="section-eyebrow mb-4">Что мы делаем</p>
-          <h2 className="section-title"><em>Направления</em> студии</h2>
+          <h2 className="section-title"><em>Направления</em> платформы</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {DIRECTIONS.map((dir, i) => (

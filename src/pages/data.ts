@@ -1,7 +1,7 @@
 export const HERO_IMAGE = "https://cdn.poehali.dev/files/bf1d80ba-4889-42b3-b652-08820026fac2.JPG";
 
 export const NAV_ITEMS = [
-  { label: "О студии", href: "#about" },
+  { label: "О платформе", href: "#about" },
   { label: "Направления", href: "#directions" },
   { label: "Курсы и книги", href: "#courses" },
   { label: "Методика", href: "#smart" },
