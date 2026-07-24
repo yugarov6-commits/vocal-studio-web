@@ -6,6 +6,11 @@ import BuyConsent from "@/components/BuyConsent";
 
 const TELEGRAM_USERNAME = "ARTMANANDCO";
 const COURSE_PRICE = "1 000 ₽";
+
+function openTelegram() {
+  const text = encodeURIComponent("Здравствуйте! Хочу узнать подробнее про курс «Медведь на ухо». Подскажите, как оплатить?");
+  window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
+}
 const COVER = "https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/0d534d16-7a07-4977-a138-65a0a1934a91.png";
 
 const PROGRAM = [

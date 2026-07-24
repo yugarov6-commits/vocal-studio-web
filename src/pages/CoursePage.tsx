@@ -7,6 +7,11 @@ import BuyConsent from "@/components/BuyConsent";
 const TELEGRAM_USERNAME = "ARTMANANDCO";
 const COURSE_PRICE = "1 000 ₽";
 
+function openTelegram() {
+  const text = encodeURIComponent("Здравствуйте! Хочу узнать подробнее про курс «Фонический резонанс». Подскажите, как оплатить?");
+  window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
+}
+
 const COURSE_MODULES = [
   {
     num: "01",

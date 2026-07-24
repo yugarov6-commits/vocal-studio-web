@@ -7,6 +7,11 @@ import BuyConsent from "@/components/BuyConsent";
 const TELEGRAM_USERNAME = "ARTMANANDCO";
 const COURSE_PRICE = "700 ₽";
 
+function openTelegram() {
+  const text = encodeURIComponent("Здравствуйте! Хочу узнать подробнее про курс «База вокала для караоке». Подскажите, как оплатить?");
+  window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
+}
+
 const FOR_WHOM = [
   "Для тех, кто не готов заниматься с педагогом, но хочет понимать, что происходит с его голосом.",
   "Для тех, кто хочет петь в караоке уверенно, но не планирует брать регулярные уроки вокала.",
