@@ -104,8 +104,7 @@ export default function KaraokeCoursePage() {
 
           <div className="inline-flex items-center gap-3 mb-10 px-6 py-3 rounded-full"
             style={{ border: "1px solid rgba(201,162,39,0.3)", background: "rgba(201,162,39,0.08)" }}>
-            <span className="font-oswald text-rock-gold text-2xl tracking-wide">{COURSE_PRICE}</span>
-            <span className="text-rock-ash font-cormorant text-lg">— полный доступ навсегда</span>
+            <span className="text-rock-ash font-cormorant text-lg">Полный доступ навсегда</span>
           </div>
 
           <BuyConsent buttonClassName="justify-center mx-auto" />

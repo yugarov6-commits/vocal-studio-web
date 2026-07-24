@@ -85,7 +85,6 @@ export default function ExtremeVocalBookPage() {
                   </div>
                   <p className="font-cormorant text-rock-ash text-base leading-snug flex-1">{fmt.desc}</p>
                   <div className="pt-4 border-t border-white/5">
-                    <div className="font-cormorant text-2xl text-gradient-gold mb-4">{fmt.price}</div>
                     <button
                       onClick={() => openTelegram(fmt.type)}
                       className="btn-gold w-full flex items-center justify-center gap-2 text-sm py-3"

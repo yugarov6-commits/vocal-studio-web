@@ -238,7 +238,6 @@ function CourseModal({ course, onClose }: { course: Course; onClose: () => void 
           <div>
             <p className="font-oswald text-[10px] tracking-[0.25em] uppercase text-rock-ash mb-1">{course.level}</p>
             <h3 className="font-cormorant text-2xl font-semibold text-rock-light leading-snug">{course.title}</h3>
-            <p className="font-cormorant text-rock-gold text-xl mt-1">{course.price}</p>
           </div>
         </div>
 
@@ -297,7 +296,6 @@ function CoursesSection() {
                   <p className="font-cormorant text-rock-light text-lg leading-relaxed mb-6" style={{ opacity: 0.85 }}>{course.desc}</p>
                   <div className="flex items-center justify-between pt-5 border-t border-white/5 mt-auto">
                     <div className="font-oswald text-xs tracking-widest uppercase text-rock-ash">{course.duration}</div>
-                    <div className="font-cormorant text-xl text-gradient-gold">{course.price}</div>
                   </div>
                   {course.link ? (
                     <Link to={course.link} className="btn-gold w-full text-center mt-5 block no-underline">
@@ -345,10 +343,8 @@ function CoursesSection() {
                 Медведь на ухо · Фонический резонанс · База вокала · Харизма 2.0 · Книга «Сила твоего голоса» · Книга «Экстра-нормальный вокал»
               </p>
               <div className="flex items-baseline gap-4">
-                <span className="font-cormorant text-4xl font-semibold text-gradient-gold">3 400 ₽</span>
-                <span className="font-oswald text-sm tracking-widest uppercase text-rock-ash line-through">5 200 ₽</span>
                 <span className="font-oswald text-[10px] tracking-[0.2em] uppercase px-3 py-1 bg-rock-red/20 text-rock-red border border-rock-red/30">
-                  −35%
+                  Выгода 35%
                 </span>
               </div>
             </div>

@@ -94,8 +94,7 @@ export default function CharismaCoursePage() {
 
           <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-full self-start relative z-10"
             style={{ border: "1px solid rgba(201,162,39,0.3)", background: "rgba(201,162,39,0.08)" }}>
-            <span className="font-oswald text-rock-gold text-2xl tracking-wide">{COURSE_PRICE}</span>
-            <span className="text-rock-ash font-cormorant text-lg">— полный доступ навсегда</span>
+            <span className="text-rock-ash font-cormorant text-lg">Полный доступ навсегда</span>
           </div>
 
           <div className="relative z-10">
@@ -160,8 +159,7 @@ export default function CharismaCoursePage() {
           </p>
           <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-full"
             style={{ border: "1px solid rgba(201,162,39,0.3)", background: "rgba(201,162,39,0.08)" }}>
-            <span className="font-oswald text-rock-gold text-2xl tracking-wide">{COURSE_PRICE}</span>
-            <span className="text-rock-ash font-cormorant text-lg">— доступ навсегда</span>
+            <span className="text-rock-ash font-cormorant text-lg">Доступ навсегда</span>
           </div>
           <div className="flex justify-center">
             <BuyConsent buttonClassName="justify-center" />
