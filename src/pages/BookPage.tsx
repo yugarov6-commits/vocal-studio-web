@@ -6,7 +6,7 @@ import { BOOK } from "./data";
 const TELEGRAM_USERNAME = "ARTMANANDCO";
 
 function openTelegram(format: string) {
-  const text = encodeURIComponent(`Здравствуйте! Хочу купить книгу «${BOOK.title}» (${format}). Подскажите, как оплатить?`);
+  const text = encodeURIComponent(`Здравствуйте! Хочу узнать подробнее про книгу «${BOOK.title}» (${format}).`);
   window.open(`https://t.me/${TELEGRAM_USERNAME}?text=${text}`, "_blank");
 }
 
@@ -90,7 +90,7 @@ export default function BookPage() {
                       className="btn-gold w-full flex items-center justify-center gap-2 text-sm py-3"
                     >
                       <Icon name="Send" size={15} />
-                      Купить в Telegram
+                      Написать в Telegram
                     </button>
                   </div>
                 </div>
