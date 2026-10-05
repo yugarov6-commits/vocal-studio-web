@@ -203,8 +203,8 @@ export default function HeroAboutSections() {
           {/* Логотип */}
           <div className="animate-fade-in mb-8 mt-16 w-full flex justify-center">
             <img
-              src="https://cdn.poehali.dev/projects/2c2649a4-f97e-4608-8ac1-4bd4de8bd9d6/bucket/3d505fe2-54ca-490f-a2f5-94ea40626c4b.png"
-              alt="Театр Рока Артман & Ко"
+              src="/logo-teatr-roka.webp"
+              alt="Театр Рока — вокал, сцена, жизнь"
               className="w-full max-w-2xl md:max-w-3xl"
             />
           </div>
