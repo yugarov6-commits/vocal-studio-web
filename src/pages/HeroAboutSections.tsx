@@ -183,31 +183,25 @@ export default function HeroAboutSections() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative md:min-h-screen overflow-hidden" style={{ backgroundColor: "#080808" }}>
 
-        {/* Фон — тёмный градиент с фиолетово-золотым свечением */}
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 100% 80% at 50% 40%, rgba(60,10,80,0.95) 0%, rgba(8,8,8,1) 70%)" }} />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(100,20,120,0.3) 0%, transparent 70%)" }} />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 30% at 30% 60%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 40% 30% at 70% 40%, rgba(201,168,76,0.06) 0%, transparent 60%)" }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(8,8,8,0.4) 0%, transparent 30%, rgba(8,8,8,0.7) 100%)" }} />
-        <Equalizer />
+        {/* Фон — логотип Театра Рока */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] sm:w-[140%] md:w-full max-w-none">
+          <img
+            src="/hero-teatr-roka.webp"
+            alt="Театр Рока — вокал, сцена, жизнь"
+            className="block w-full h-auto"
+          />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(8,8,8,0.6) 0%, transparent 15%, transparent 70%, #080808 100%)" }} />
+        </div>
+        <div className="absolute inset-x-0 bottom-0 h-[45%] opacity-40"><Equalizer /></div>
 
         {/* Декоративные линии */}
         <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5) 50%, transparent)" }} />
         <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(122,21,37,0.5) 50%, transparent)" }} />
 
         {/* Контент по центру */}
-        <div className="relative z-10 w-full flex flex-col items-center justify-center px-6 pt-24 pb-24 text-center">
-
-          {/* Логотип */}
-          <div className="animate-fade-in mb-8 mt-16 w-full flex justify-center">
-            <img
-              src="/logo-teatr-roka.webp"
-              alt="Театр Рока — вокал, сцена, жизнь"
-              className="w-full max-w-2xl md:max-w-3xl"
-            />
-          </div>
+        <div className="relative z-10 w-full flex flex-col items-center px-6 pb-20 text-center pt-[88vw] sm:pt-[62vw] md:pt-[44vw]">
 
           {/* Слоган */}
           <p className="font-cormorant text-xl md:text-2xl italic mb-10 animate-fade-in scroll-delay-2"
@@ -229,12 +223,6 @@ export default function HeroAboutSections() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Скролл-хинт */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in scroll-delay-5">
-          <div className="w-px h-10 bg-gradient-to-b from-rock-gold/50 to-transparent" />
-          <span className="font-oswald text-[8px] tracking-[0.4em] uppercase" style={{ color: "rgba(201,168,76,0.4)" }}>scroll</span>
         </div>
       </section>
 
